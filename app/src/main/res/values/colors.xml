@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9f3032</color>
+    <color name="colorPrimaryDark">#9f3032</color>
+    <color name="colorAccent">#9f3032</color>
+    <color name="blanco">#fff</color><!-- Color de los textos en los los fragments y en los asyn dialog -->
+    <color name="background_material_light">#505355</color><!-- Color del fondo del navbar -->
+    <color name="foreground_material_light">#deffffff</color>
+    <color name="black">#505355</color>
+    <color name="primary_text_default_material_light">#deffffff</color><!-- Color editText-->
+</resources>

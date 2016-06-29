@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:title="Opciones"
+        >
+        <!--android:visible="false"-->
+        <menu>
+
+
+            <item
+                android:id="@+id/crearusuario"
+                android:icon="@drawable/ic_account_plus"
+                android:title="Registrar Usuario"
+                />
+            <item
+                android:id="@+id/cambiarcontrasena"
+                android:icon="@drawable/ic_key"
+                android:title="Cambiar PIN"
+                />
+            <item
+                android:id="@+id/cerrarsesion"
+                android:icon="@drawable/ic_logout"
+                android:title="Cerrar Sesión"
+            />
+
+        </menu>
+    </item>
+
+</menu>

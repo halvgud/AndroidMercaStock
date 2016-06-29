@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View android:id="@+id/strut"
+        android:layout_width="15dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/descripcionColumna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/strut"
+        android:textColor="#ffffff"
+        /><!-- Color del nombre de las categorias -->
+
+    <TextView
+        android:id="@+id/api"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descripcionColumna"
+        android:textColor="#ffffff"
+        /><!-- Color de los artículos procesados -->
+    <TextView
+        android:id="@+id/cat_id"
+        android:textColor="#9f3032"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/strut"
+
+        />
+</RelativeLayout>

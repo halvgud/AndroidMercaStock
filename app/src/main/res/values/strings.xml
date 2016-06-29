@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MercaStock</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="labelUsuario">USUARIO</string>
+    <string name="labelPass">CONTRASEÑA</string>
+    <string name="buttonIniciarSesion">Iniciar Sesión</string>
+    <string name="tipo_cuenta">mx.mercatto.designmercastock.cuenta</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Sucursal">SUCURSAL:</string>
+</resources>

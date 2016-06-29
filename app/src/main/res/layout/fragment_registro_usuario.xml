@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:nestedScrollingEnabled="false"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="mx.mercatto.designmercastock.RegistroUsuario">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/form_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Usuario"
+                android:id="@+id/textView7"
+                android:layout_marginTop="25dp"
+                android:textSize="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:shadowColor="#9f3032"
+                android:textColor="@color/blanco"
+                android:shadowDx="0" android:shadowDy="0" android:shadowRadius="10"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText5"
+                android:layout_below="@+id/textView7"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="58dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:textAlignment="center"
+                android:maxLength="15"
+                android:singleLine="true"
+                android:textColor="@color/blanco"
+                android:imeOptions="actionNext"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Contraseña"
+                android:id="@+id/textView8"
+                android:textSize="20dp"
+                android:layout_below="@+id/editText5"
+                android:layout_centerHorizontal="true"
+                android:shadowColor="#9f3032"
+                android:textColor="@color/blanco"
+                android:shadowDx="0" android:shadowDy="0" android:shadowRadius="10"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText6"
+                android:layout_below="@+id/textView8"
+                android:layout_alignEnd="@+id/editText5"
+                android:layout_marginEnd="52dp"
+                android:layout_alignStart="@+id/editText5"
+                android:layout_marginStart="32dp"
+                android:inputType="numberPassword"
+                android:textAlignment="center"
+                android:maxLength="4"
+                android:singleLine="true"
+                android:textColor="@color/blanco"
+                android:digits="aábcdeéfghiíjklmnñoópqrstuúvwxyzAÁBCDEÉFGHIÍJKLMNÑOÓPQRSTUÚVWXYZ0123456789 "
+                android:imeOptions="actionNext"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Repetir Contraseña"
+                android:id="@+id/textView9"
+                android:textSize="20dp"
+                android:layout_below="@+id/editText6"
+                android:layout_centerHorizontal="true"
+                android:shadowColor="#9f3032"
+                android:textColor="@color/blanco"
+                android:shadowDx="0" android:shadowDy="0" android:shadowRadius="10"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText7"
+                android:layout_below="@+id/textView9"
+                android:layout_alignStart="@+id/editText6"
+                android:layout_alignEnd="@+id/editText6"
+                android:inputType="numberPassword"
+                android:textAlignment="center"
+                android:maxLength="4"
+                android:singleLine="true"
+                android:textColor="@color/blanco"
+                android:imeOptions="actionNext"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Nombre"
+                android:id="@+id/textView10"
+                android:textSize="20dp"
+                android:layout_below="@+id/editText7"
+                android:layout_alignEnd="@+id/textView7"
+                android:shadowColor="#00ff1e"
+                android:textColor="@color/blanco"
+                android:shadowDx="0" android:shadowDy="0" android:shadowRadius="10"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText8"
+                android:textAlignment="center"
+                android:maxLength="20"
+                android:layout_below="@+id/textView10"
+                android:layout_alignStart="@+id/editText9"
+                android:layout_alignEnd="@+id/editText9"
+                android:digits="aábcdeéfghiíjklmnñoópqrstuúvwxyzAÁBCDEÉFGHIÍJKLMNÑOÓPQRSTUÚVWXYZ "
+                android:singleLine="true"
+                android:imeOptions="actionNext"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Apellidos"
+                android:id="@+id/textView11"
+                android:textSize="20dp"
+                android:layout_below="@+id/editText8"
+                android:layout_alignStart="@+id/textView8"
+                android:shadowColor="#9f3032"
+                android:textColor="@color/blanco"
+                android:shadowDx="0" android:shadowDy="0" android:shadowRadius="10"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText9"
+                android:layout_below="@+id/textView11"
+                android:textAlignment="center"
+                android:maxLength="20"
+                android:textColor="@color/blanco"
+                android:layout_alignEnd="@+id/editText5"
+                android:layout_alignStart="@+id/editText5"
+                android:digits="aábcdeéfghiíjklmnñoópqrstuúvwxyzAÁBCDEÉFGHIÍJKLMNÑOÓPQRSTUÚVWXYZ "
+                android:singleLine="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Sexo"
+                android:id="@+id/textView12"
+                android:textSize="20dp"
+                android:layout_below="@+id/editText9"
+                android:layout_centerHorizontal="true"
+                android:shadowColor="#9f3032"
+                android:textColor="@color/blanco"
+                android:shadowDx="0" android:shadowDy="0" android:shadowRadius="10"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerSexo"
+                android:layout_alignParentBottom="false"
+                android:layout_below="@+id/textView12"
+                android:layout_alignStart="@+id/textView9"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_alignEnd="@+id/editText7" />
+
+            <!--android:entries="@array/items"-->
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:onClick="Registro"
+        android:id="@+id/button7"
+        android:enabled="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:layout_marginBottom="25dp" />
+
+</RelativeLayout>

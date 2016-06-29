@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mx.mercatto.mercastock.FragmentFormularioArticulo"
+    android:focusable="true"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textSize="25dp"
+        android:layout_below="@+id/FormularioArticulotxtTituloInferior"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:shadowColor="#9f3032"
+        android:textColor="@color/blanco"
+        android:shadowDx="0" android:shadowDy="0" android:shadowRadius="10"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:id="@+id/button3"
+        android:onClick="Confirmacion"
+        android:enabled="false"
+        android:textColor="#000"
+        android:layout_alignBottom="@+id/editText3"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textIsSelectable="false"
+        android:inputType="number|numberDecimal"
+        android:phoneNumber="false"
+        android:enabled="true"
+        android:singleLine="true"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:layout_toStartOf="@+id/button3"
+        android:maxLength="8" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/FormularioArticulotxtTituloInferior"
+        android:textSize="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:shadowColor="#9f3032"
+        android:textColor="#fff"
+        android:shadowDx="0" android:shadowDy="0" android:shadowRadius="10"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/FormularioArticulotxtCodigoDeBarras"
+        android:textSize="25dp"
+        android:layout_below="@+id/FormularioArticulotxtTituloInferior"
+        android:layout_toStartOf="@+id/button3"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"
+        android:shadowColor="#9f3032"
+        android:textColor="#fff"
+        android:shadowDx="0" android:shadowDy="0" android:shadowRadius="10"/>
+
+</RelativeLayout>
