@@ -8,7 +8,6 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="mx.mercatto.mercastock.FragmentFormularioArticulo"
-    android:focusable="true"
     >
 
     <TextView
@@ -42,6 +41,7 @@
         android:textAlignment="center"
         android:textIsSelectable="false"
         android:inputType="number|numberDecimal"
+
         android:phoneNumber="false"
         android:enabled="true"
         android:singleLine="true"
@@ -49,6 +49,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="25dp"
         android:layout_toStartOf="@+id/button3"
+        android:textColor="@color/blanco"
         android:maxLength="8" />
 
     <TextView
@@ -61,7 +62,7 @@
         android:textAlignment="center"
         android:layout_centerHorizontal="true"
         android:shadowColor="#9f3032"
-        android:textColor="#fff"
+        android:textColor="@color/blanco"
         android:shadowDx="0" android:shadowDy="0" android:shadowRadius="10"/>
 
     <TextView
@@ -74,7 +75,7 @@
         android:layout_alignParentEnd="true"
         android:textAlignment="center"
         android:shadowColor="#9f3032"
-        android:textColor="#fff"
+        android:textColor="@color/blanco"
         android:shadowDx="0" android:shadowDy="0" android:shadowRadius="10"/>
 
 </RelativeLayout>

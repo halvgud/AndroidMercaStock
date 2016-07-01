@@ -47,6 +47,7 @@ public class PushNotificationService extends GcmListenerService {
                     Main.bandera=0;
                     Configuracion.reiniciarValoresDefault();
 
+
             }
             String message = data.getString("message");
             Log.d("data received",data.toString());

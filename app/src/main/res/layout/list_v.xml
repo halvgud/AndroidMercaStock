@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignEnd="@id/strut"
-        android:textColor="#ffffff"
+        android:textColor="@color/blanco"
         /><!-- Color del nombre de las categorias -->
 
     <TextView
@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/descripcionColumna"
-        android:textColor="#ffffff"
+        android:textColor="@color/blanco"
         /><!-- Color de los artículos procesados -->
     <TextView
         android:id="@+id/cat_id"

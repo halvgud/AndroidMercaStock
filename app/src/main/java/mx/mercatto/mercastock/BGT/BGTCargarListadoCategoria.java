@@ -41,7 +41,7 @@ public class BGTCargarListadoCategoria extends AsyncTask<String, String, JSONObj
      JSONObject postparams;
     Activity activity;
     ProgressDialog asyncDialog;
-    //public static Integer CodeResponse;
+    public static Integer CodeResponse;
     public static JSONArray _JsonGenerico = null;
     public static ArrayList<HashMap<String, String>>_Listado;
 
@@ -84,21 +84,21 @@ public class BGTCargarListadoCategoria extends AsyncTask<String, String, JSONObj
             osw.write(postparams.toString());
             osw.flush();
             osw.close();
+
             StringBuilder sb = new StringBuilder();
             BufferedReader br = new BufferedReader(new InputStreamReader( httpCon.getInputStream(),"utf-8"));
+            CodeResponse =httpCon.getResponseCode();
             String line;
             while ((line = br.readLine()) != null) {
                 sb.append(line).append("\n");
             }
 
             json = sb.toString();
+            Log.d("jsonresponse",json);
             jObj = new JSONObject(json.substring(json.indexOf("{"), json.lastIndexOf("}") + 1));
 
-        } catch (JSONException e) {
-           // showToast(e.getMessage());
+        } catch (Exception e){
             bandera=false;
-        }catch (Exception e){
-            showToast("Text");
         }
 
         return jObj;
@@ -108,10 +108,15 @@ boolean bandera=true;
 
     @Override
     protected void onPostExecute(JSONObject file_url) {
+        Log.d("respuesta",CodeResponse+"");
         try {
             super.onPostExecute(file_url);
-            if(bandera)
-            ListViewCategorias(file_url);
+            if(bandera) {
+                ListViewCategorias(file_url);
+            }
+            else if(CodeResponse==202){
+                showToast("No existen productos por inventariar");
+            }
             else{
 
                 FragmentConexionPerdida fragment = new FragmentConexionPerdida();
@@ -159,7 +164,8 @@ boolean bandera=true;
                     } else {
                         map.put(Configuracion.getDescripcionCategoria(), nombreCategoria);
                     }
-
+                    Log.d("titulodeDesc",Configuracion.getDescripcionCategoria());
+                    Log.d("valordeDesc",nombreCategoria);
                     map.put(Configuracion.getCantidadCategoria(), Integer.toString(cantidad));
                     map.put(Configuracion.getIdCategoria(), cat_id);
                     map.put(Configuracion.getProcesadoCategoria(), Integer.toString(procesado));
@@ -190,8 +196,10 @@ boolean bandera=true;
                             }
                             args.putString("cat_id", cat_id);
                             args.putString("articulo", descripcionArticulo);
+                            PushNotificationService.Xrray=null;
                             fragment.setArguments(args);
                             fragmentManager.beginTransaction().replace(R.id.content_main, fragment).addToBackStack(null).commit();
+
                         }
                     });
                 }

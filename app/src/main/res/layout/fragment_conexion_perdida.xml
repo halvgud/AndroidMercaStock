@@ -55,7 +55,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="33dp"
-        android:textColor="#ffffff"
+        android:textColor="@color/blanco"
         android:shadowColor="#9f3032"
        />
 
