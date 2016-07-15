@@ -63,6 +63,7 @@ public class FragmentFormularioArticulo extends Fragment  implements View.OnClic
         txtCantidad.setText(String.format("Cantidad por %s:", args.getString(Configuracion.getUnidadArticulo())));
         Button upButton = (Button) rootView.findViewById(R.id.button3);
         upButton.setOnClickListener(this);
+
         txt1.addTextChangedListener(new TextWatcher() {
 
             @Override
@@ -117,10 +118,6 @@ public class FragmentFormularioArticulo extends Fragment  implements View.OnClic
             txt1.setInputType(InputType.TYPE_CLASS_NUMBER);
         }
 
-        //txt1.setFocusableInTouchMode(true);
-        //txt1.requestFocus();
-        imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
-        imm.showSoftInput(txt1, InputMethodManager.SHOW_IMPLICIT);
         return rootView;
     }
 

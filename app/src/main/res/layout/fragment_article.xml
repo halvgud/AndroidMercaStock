@@ -23,6 +23,7 @@
         android:layout_centerHorizontal="true"
         android:textColor="@color/blanco"
         android:shadowColor="#9f3032"
+        android:labelFor="@+id/editText"
         android:shadowDx="0" android:shadowDy="0" android:shadowRadius="10"/>
 
     <EditText
@@ -34,6 +35,8 @@
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
         android:textColor="@color/blanco"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
         android:digits="aábcdeéfghiíjklmnñoópqrstuúvwxyzAÁBCDEÉFGHIÍJKLMNÑOÓPQRSTUÚVWXYZ0123456789 "
         android:maxLength="15" />
 
