@@ -158,6 +158,7 @@ public class FragmentFormularioArticulo extends Fragment  implements View.OnClic
             JSONObject jsobj = new JSONObject();
             jsobj.put("idInventario",idInventario);
             jsobj.put("existenciaRespuesta",valor);
+            jsobj.put("idUsuario",Configuracion.settings.getString("idUsuario","0"));
             jsobj.put("art_id",art_id);
             jsobj.put("claveApi2",Configuracion.settings.getString("ClaveApi",""));
             BGTPostFormularioArticulo bgt = new BGTPostFormularioArticulo(Configuracion.getApiUrlInventario(), getActivity(), jsobj);
